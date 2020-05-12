@@ -2,6 +2,9 @@ const express = require("express");
 const app = express();
 const port = 5000;
 const bodyParser = require("body-parser");
+
+const config = require("./config/key");
+
 const { User } = require("./models/User");
 
 // application/x--www-form-urlencoded를 분석
@@ -10,23 +13,14 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // application/json를 분석
 app.use(bodyParser.json());
 
-/**
-    useNewUrlParser
-    useUnifiedTopology
-    useCreateIndex
-    useFindAndModify 이 설정들을 안해주면 에러가 날 수있다.
- */
 const mongoose = require("mongoose");
 mongoose
-  .connect(
-    "mongodb+srv://wndtlr1024:qorrn1024@practice-ptijw.mongodb.net/test?retryWrites=true&w=majority",
-    {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-      useCreateIndex: true,
-      useFindAndModify: false,
-    }
-  )
+  .connect(config.mongoURI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: false,
+  })
   .then(() => console.log("MongoDB Connected..."))
   .catch((err) => console.log(err));
 
