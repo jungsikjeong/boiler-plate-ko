@@ -33,3 +33,10 @@ useFindAndModify: false,</p>
 # 로그인 기능
 
 > [정리자료](https://velog.io/@wndtlr1024/%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EA%B8%B0%EB%8A%A5-with-jsonwebtoken)
+
+
+# 로그아웃
+
+특정 유저의 DB에있는 토큰을 지워주면 클라이언트에서 가져온 토큰과 DB에있는 토큰을 검증하는 부분에서 검증 실패가일어나 로그인이 풀려버리기때문에 토큰을 지워줌으로써 로그아웃기능을 구현한다.
+
+
