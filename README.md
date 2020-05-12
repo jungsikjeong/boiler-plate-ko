@@ -1,4 +1,6 @@
-<h1>index.js</h1> 몽구스 커넥션코드부분에서 다음 코드를 안써주면 에러가 날수있다.
+# index.js
+
+몽구스 커넥션코드부분에서 다음 코드를 안써주면 에러가 날수있다.
 
 <p>useNewUrlParser: true,
 useUnifiedTopology: true,
@@ -16,3 +18,16 @@ useFindAndModify: false,</p>
 <br />
 .gitignore에 .dev를 적었기때문에 나중에 다운받아 사용할땐 config폴더에 dev.js를 생성후, mongoURI 경로를 적어주면됨<br />
 (나는 mongo클라스터url을적어줬음)
+
+---
+
+# Bcrypt로 비밀번호 암호화하기
+
+> 단방향 해시 함수로 데이터를 암호화하기위해 쓰인다.
+> npm install bcrypt --save
+
+> [정리자료](https://velog.io/@wndtlr1024/Bcrypt%EB%A1%9C-%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8-%EC%95%94%ED%98%B8%ED%99%94%ED%95%98%EA%B8%B0)
+
+---
+
+# 로그인 기능
