@@ -31,3 +31,5 @@ useFindAndModify: false,</p>
 ---
 
 # 로그인 기능
+
+> [정리자료](https://velog.io/@wndtlr1024/%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EA%B8%B0%EB%8A%A5-with-jsonwebtoken)
