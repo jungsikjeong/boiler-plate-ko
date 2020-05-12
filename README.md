@@ -1,4 +1,6 @@
-# index.js
+# Server
+
+## index.js
 
 몽구스 커넥션코드부분에서 다음 코드를 안써주면 에러가 날수있다.
 
@@ -21,7 +23,7 @@ useFindAndModify: false,</p>
 
 ---
 
-# Bcrypt로 비밀번호 암호화하기
+## Bcrypt로 비밀번호 암호화하기
 
 > 단방향 해시 함수로 데이터를 암호화하기위해 쓰인다.
 > npm install bcrypt --save
@@ -30,13 +32,29 @@ useFindAndModify: false,</p>
 
 ---
 
-# 로그인 기능
+## 로그인 기능
 
 > [정리자료](https://velog.io/@wndtlr1024/%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EA%B8%B0%EB%8A%A5-with-jsonwebtoken)
 
+## 로그아웃
 
-# 로그아웃
+특정 유저의 DB에있는 토큰을 지워주면 클라이언트에서 가져온 토큰과 DB에있는 토큰을 검증하는 부분에서 검증 실패가일어나 로그인이 풀려버리기때문에 토큰을 지워줌으로써 로그아웃 기능을 구현한다.
 
-특정 유저의 DB에있는 토큰을 지워주면 클라이언트에서 가져온 토큰과 DB에있는 토큰을 검증하는 부분에서 검증 실패가일어나 로그인이 풀려버리기때문에 토큰을 지워줌으로써 로그아웃기능을 구현한다.
+---
 
+<br />
 
+# Client
+
+## Create-React-App
+
+> npx create-react-app . <br />
+
+> . 을 붙여주는 이유는 "client폴더 안에다가 react 설치를 하겠다." 라는 이유에서 붙여줌<br/>
+>  npx로 설치해줌으로써 항상 최신 버전을 사용할 수 있고, Disk Space를 낭비하지 않을수 있다.
+
+<br />
+
+원래는 npm i -g create-react-app 이렇게 global 디렉터리에 다운받았으나, 이제는 npx를 이용하여 다운받지않고 사용이 가능하다. (Disk Space 낭비방지)
+> -g 를 안붙이면 로컬로 다운받아지는데, node_modules폴더안에 다운받아짐. <br />
+> -g는 컴퓨터 자체에 다운받아짐(경로는 운영체제마다 다름)
