@@ -65,7 +65,7 @@ npx로 설치해줌으로써 항상 최신 버전을 사용할 수 있고, Disk 
 ### Concurrently
 
 > 한번에 프론트와 백엔드서버를 킬수 있게 해줌<br />
-> cd .. npm i concurrently --save `client에서 말고 그 상위폴더로 가서 설치`
+> cd .. npm i concurrently --save `client에서 말고 그 상위폴더로(root디렉토리) 가서 설치`
 
 <br />
 root디렉토리의 package.json에서 scripts에 다음을 추가해준다. <br />
