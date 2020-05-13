@@ -2,8 +2,6 @@
 
 ### 1. client와 server의 PORT 번호가 달라서 에러 발생 (CORS)
 
-![에러](/README_IMAGE/에러1.png)
-
 - client port번호는 3000, server의 port번호는 5000으로 서로 포트번호가 다르다.
 
 ☞ [`Proxy`](https://velog.io/@wndtlr1024/proxy%EC%84%A4%EC%A0%95)로 해결
