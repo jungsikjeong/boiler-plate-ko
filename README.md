@@ -61,3 +61,15 @@ npx로 설치해줌으로써 항상 최신 버전을 사용할 수 있고, Disk 
 
 > -g 를 안붙이면 로컬로 다운받아지는데, node_modules폴더안에 다운받아짐. <br />
 > -g는 컴퓨터 자체에 다운받아짐(경로는 운영체제마다 다름)
+
+### Concurrently
+
+> 한번에 프론트와 백엔드서버를 킬수 있게 해줌<br />
+> cd .. npm i concurrently --save `client에서 말고 그 상위폴더로 가서 설치`
+
+<br />
+root디렉토리의 package.json에서 scripts에 다음을 추가해준다. <br />
+
+> "dev": "concurrently \"npm run backend\" \"npm run start --prefix client\"" <br />
+
+`"npm run start --prefix client\` 설명 : 그냥 npm run start를 해주면 루트 디렉토리가 실행됨 (scripts의start가 겹쳐서) <br /> --prefix client를 붙여줄경우 client의 package.json에있는 "start"가 실행됨
