@@ -14,10 +14,12 @@
 
 몽구스 커넥션코드부분에서 다음 코드를 안써주면 에러가 날수있다.
 
-<p>useNewUrlParser: true,
+```js
+useNewUrlParser: true,
 useUnifiedTopology: true,
 useCreateIndex: true,
-useFindAndModify: false,</p>
+useFindAndModify: false
+```
 
 <br />
 <h1>config폴더</h1>
@@ -52,8 +54,8 @@ useFindAndModify: false,</p>
 
 > npx create-react-app . <br />
 
-> . 을 붙여주는 이유는 "client폴더 안에다가 react 설치를 하겠다." 라는 이유에서 붙여줌<br/>
-> npx로 설치해줌으로써 항상 최신 버전을 사용할 수 있고, Disk Space를 낭비하지 않을수 있다.
+. 을 붙여주는 이유는 "client폴더 안에다가 react 설치를 하겠다." 라는 이유에서 붙여줌<br/>
+npx로 설치해줌으로써 항상 최신 버전을 사용할 수 있고, Disk Space를 낭비하지 않을수 있다.
 
 <br />
 
