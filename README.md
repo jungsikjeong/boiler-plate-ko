@@ -19,8 +19,6 @@ useUnifiedTopology: true,
 useCreateIndex: true,
 useFindAndModify: false,</p>
 
----
-
 <br />
 <h1>config폴더</h1>
 개발환경에따라서 mongoURI를 다르게가져오게끔 config 폴더안에 여러 파일을두었음.<br />
@@ -31,16 +29,12 @@ useFindAndModify: false,</p>
 .gitignore에 .dev를 적었기때문에 나중에 다운받아 사용할땐 config폴더에 dev.js를 생성후, mongoURI 경로를 적어주면됨<br />
 (나는 mongo클라스터url을적어줬음)
 
----
-
 ### Bcrypt로 비밀번호 암호화하기
 
 > 단방향 해시 함수로 데이터를 암호화하기위해 쓰인다.
 > npm install bcrypt --save
 
 > [정리자료](https://velog.io/@wndtlr1024/Bcrypt%EB%A1%9C-%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8-%EC%95%94%ED%98%B8%ED%99%94%ED%95%98%EA%B8%B0)
-
----
 
 ### 로그인 기능
 
@@ -49,8 +43,6 @@ useFindAndModify: false,</p>
 ### 로그아웃
 
 특정 유저의 DB에있는 토큰을 지워주면 클라이언트에서 가져온 토큰과 DB에있는 토큰을 검증하는 부분에서 검증 실패가일어나 로그인이 풀려버리기때문에 토큰을 지워줌으로써 로그아웃 기능을 구현한다.
-
----
 
 <br />
 
