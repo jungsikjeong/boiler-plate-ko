@@ -57,8 +57,6 @@ useFindAndModify: false
 . 을 붙여주는 이유는 "client폴더 안에다가 react 설치를 하겠다." 라는 이유에서 붙여줌<br/>
 npx로 설치해줌으로써 항상 최신 버전을 사용할 수 있고, Disk Space를 낭비하지 않을수 있다.
 
-<br />
-
 원래는 npm i -g create-react-app 이렇게 global 디렉터리에 다운받았으나, 이제는 npx를 이용하여 다운받지않고 사용이 가능하다. (Disk Space 낭비방지)
 
 > -g 를 안붙이면 로컬로 다운받아지는데, node_modules폴더안에 다운받아짐. <br />
