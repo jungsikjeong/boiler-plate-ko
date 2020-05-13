@@ -73,3 +73,11 @@ root디렉토리의 package.json에서 scripts에 다음을 추가해준다. <br
 > "dev": "concurrently \"npm run backend\" \"npm run start --prefix client\"" <br />
 
 `"npm run start --prefix client\` 설명 : 그냥 npm run start를 해주면 루트 디렉토리가 실행됨 (scripts의start가 겹쳐서) <br /> --prefix client를 붙여줄경우 client의 package.json에있는 "start"가 실행됨
+
+### 리덕스
+
+> npm i redux react-redux redux-promise redux-thunk
+
+- redux-thunk, redux-promise
+  - 리덕스를 조금 더 잘 쓸수있게 도와주는 미들웨어다.
+  - 리덕스는 {type:SUCCESS, age:12} 처럼 객체만을 받을수있는데, function이나 promise같은 형식은 받을수없다. 이를 받을수 있게 도와줌
