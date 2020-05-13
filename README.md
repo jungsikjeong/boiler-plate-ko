@@ -1,3 +1,9 @@
+# 소개
+
+> 이 곳은 [따라하며 배우는 노드, 리액트 시리즈 - 기본 강의](https://www.inflearn.com/course/%EB%94%B0%EB%9D%BC%ED%95%98%EB%A9%B0-%EB%B0%B0%EC%9A%B0%EB%8A%94-%EB%85%B8%EB%93%9C-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EA%B8%B0%EB%B3%B8/dashboard)를보며 타이핑한 것입니다.<br />
+> 모든 코드는 강의를 보며 타이핑했고, README.md에 헷갈릴만한것과 이해가 잘 안가는것 위주로 정리했습니다.<br />
+> 남이 보기에 조금 불친절한 설명들 일 수도 있습니다..
+
 # 이슈
 
 ### 1. client와 server의 PORT 번호가 달라서 에러 발생 (CORS)
