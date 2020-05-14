@@ -1,5 +1,8 @@
 const { User } = require("../models/User");
 
+// 3. 유저가 있으면 인증 OK
+// 유저가 없으면 인증 NO
+
 let auth = (req, res, next) => {
   // 인증 처리를 하는곳
 
@@ -15,9 +18,6 @@ let auth = (req, res, next) => {
     req.user = user;
     next();
   });
-  // 3. 유저가 있으면 인증 OK
-
-  // 유저가 없으면 인증 NO
 };
 
 module.exports = { auth };
